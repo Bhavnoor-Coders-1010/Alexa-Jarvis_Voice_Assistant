@@ -144,10 +144,10 @@ def sendEmail(to, content):
     server = sl.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login("singh.bhavnoor.4854@gmail.com", "2191419191@BSNss^&WJKKWJKF@meherkaro@BABAji")
-    server.sendmail("singh.bhavnoor.4854@gmail.com", to, content)
+    server.login("e-mail-id", "password")
+    server.sendmail("e-mail-id", to, content)
     server.close()
-whatsapp_contacts = {"papa" : "919711117489","aryan":"919971828986","bhavna":"918802848358","bhavnoor":"919899835666"}
+whatsapp_contacts = {} #dictionary with names as keys and phone-numbers as values
 #speak("Running")
 
 if __name__ == '__main__':
@@ -306,9 +306,7 @@ if __name__ == '__main__':
                             wb.open(i)
                             break
                     
-                elif 'open teams' in query or 'open team' in query:
-                    speak("Opening Teams")
-                    wb.open("https://teams.microsoft.com/_#/school/conversations/General?threadId=19:7bbcd8f3a3b64bcb8d41e1867a1546f0@thread.tacv2&ctx=channel")
+
                 elif 'open discord' in query:
                     speak("Opening Discord")
                     wb.open("https://discord.com/channels/750904002178318427/751656533775089794")
