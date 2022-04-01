@@ -1,0 +1,12 @@
+pyttsx3
+datetime
+speech_recognition as sr
+wikipedia as wp
+webbrowser as wb
+os
+random
+pyautogui as pg
+csv
+smtplib as sl
+time
+screen_brightness_control as sbc
